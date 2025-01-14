@@ -79,7 +79,7 @@ npm run start
 ### Optional: Step 4: test
 
 ```bash
-npm run start
+npm run test
 ```
 
 The application will run on `http://localhost:3000`.
@@ -105,6 +105,15 @@ The application will run on `http://localhost:3000`.
 
 The exercise should take approximately **20 minutes** to complete.
 
-```
+## My Submission
 
-```
+- It uses NestJS and the Repository Pattern.
+- It uses Zod as the DTO validation library.
+- It uses Jest for testing.
+- It uses Swagger for documentation (You can find on `/docs/`)
+- It was developed in NeoVim (I'm learning)
+- It was deployed on [Fly.io](https://seedify-senior-backend-coding-exercise.fly.dev)
+- It has a CI workflow that runs on every pull request.
+- It has a Fly workflow that deploys the application on every push to the main branch.
+
+Yeah, I think it's pretty good overall. Hope you like it.
