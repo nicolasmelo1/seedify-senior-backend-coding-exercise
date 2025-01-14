@@ -109,6 +109,7 @@ The exercise should take approximately **20 minutes** to complete.
 
 - It uses NestJS and the Repository Pattern.
 - It uses Zod as the DTO validation library.
+- It uses an InMemoryStore to store the data. During the development, it will reset the data every time you restart the application. But it didn't mention any type of data persist.
 - It uses Jest for testing.
 - It uses Swagger for documentation (You can find on `/docs/`)
 - It was developed in NeoVim (I'm learning)
