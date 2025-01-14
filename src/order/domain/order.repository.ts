@@ -1,6 +1,6 @@
 import { Order } from './order';
 
-export interface OrderRepository {
-  save(order: Order): Promise<void>;
-  findById(id: string): Promise<Order>;
+export interface IOrderRepository {
+  save(order: Order): Promise<Order>;
+  findById(id: number): Promise<Order | undefined>;
 }

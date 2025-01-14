@@ -1,18 +1,18 @@
 type OrderConstructorParameters = {
-  id: string;
-  productId: string;
-  quantity: string;
-  userId: string;
+  id?: number;
+  productId: number;
+  quantity: number;
+  userId: number;
 };
 
 export class Order {
-  #id: string;
-  #productId: string;
-  #quantity: string;
-  #userId: string;
+  #id!: number;
+  #productId: number;
+  #quantity: number;
+  #userId: number;
 
   constructor({ id, productId, quantity, userId }: OrderConstructorParameters) {
-    this.#id = id;
+    if (typeof id === 'number') this.#id = id;
     this.#productId = productId;
     this.#quantity = quantity;
     this.#userId = userId;
@@ -21,6 +21,11 @@ export class Order {
   get id() {
     return this.#id;
   }
+
+  set id(value: number) {
+    if (typeof this.#id !== 'string') this.#id = value;
+  }
+
   get productId() {
     return this.#productId;
   }
@@ -29,5 +34,14 @@ export class Order {
   }
   get userId() {
     return this.#userId;
+  }
+
+  toJSON() {
+    return {
+      id: this.id,
+      productId: this.productId,
+      quantity: this.quantity,
+      userId: this.userId,
+    };
   }
 }
