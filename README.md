@@ -1,4 +1,3 @@
-
 # Senior Backend Coding Exercise
 
 ## Overview
@@ -47,6 +46,7 @@ You are provided with a legacy controller (`legacy-order.controller.js`) that ha
 ### Modular Architecture:
 
 The solution should follow a **modular architecture**:
+
 - **Domain layer** (entities and repository interfaces).
 - **Application layer** (business logic and services).
 - **Infrastructure layer** (controllers and repository implementations).
@@ -76,14 +76,22 @@ npm install
 npm run start
 ```
 
+### Optional: Step 4: test
+
+```bash
+npm run start
+```
+
 The application will run on `http://localhost:3000`.
 
 ## Files of Interest
 
 ### Legacy Code:
+
 - `src/order/infrastructure/legacy-order.controller.js`: This is the legacy controller you will be refactoring.
 
 ### Refactored Code (to be created):
+
 - Refactor the legacy controller, applying the repository pattern, DTO validation, and separating business logic into appropriate layers.
 
 ## What We Are Looking For
@@ -96,3 +104,7 @@ The application will run on `http://localhost:3000`.
 ### Time Estimate:
 
 The exercise should take approximately **20 minutes** to complete.
+
+```
+
+```
