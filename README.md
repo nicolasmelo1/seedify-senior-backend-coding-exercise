@@ -1,4 +1,3 @@
-
 # Senior Backend Coding Exercise
 
 ## Overview
@@ -47,6 +46,7 @@ You are provided with a legacy controller (`legacy-order.controller.js`) that ha
 ### Modular Architecture:
 
 The solution should follow a **modular architecture**:
+
 - **Domain layer** (entities and repository interfaces).
 - **Application layer** (business logic and services).
 - **Infrastructure layer** (controllers and repository implementations).
@@ -76,14 +76,22 @@ npm install
 npm run start
 ```
 
+### Optional: Step 4: test
+
+```bash
+npm run test
+```
+
 The application will run on `http://localhost:3000`.
 
 ## Files of Interest
 
 ### Legacy Code:
+
 - `src/order/infrastructure/legacy-order.controller.js`: This is the legacy controller you will be refactoring.
 
 ### Refactored Code (to be created):
+
 - Refactor the legacy controller, applying the repository pattern, DTO validation, and separating business logic into appropriate layers.
 
 ## What We Are Looking For
@@ -96,3 +104,17 @@ The application will run on `http://localhost:3000`.
 ### Time Estimate:
 
 The exercise should take approximately **20 minutes** to complete.
+
+## My Submission
+
+- It uses NestJS and the Repository Pattern.
+- It uses Zod as the DTO validation library.
+- It uses an InMemoryStore to store the data. During the development, it will reset the data every time you restart the application. But it didn't mention any type of data persist.
+- It uses Jest for testing.
+- It uses Swagger for documentation (You can find on `/docs/`)
+- It was developed in NeoVim (I'm learning)
+- It was deployed on [Fly.io](https://seedify-senior-backend-coding-exercise.fly.dev)
+- It has a CI workflow that runs on every pull request.
+- It has a Fly workflow that deploys the application on every push to the main branch.
+
+Yeah, I think it's pretty good overall. Hope you like it.
