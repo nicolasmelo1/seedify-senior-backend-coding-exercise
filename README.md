@@ -72,8 +72,16 @@ npm install
 
 ### Step 3: Run the Application
 
+- **Production**
+
 ```bash
 npm run start
+```
+
+- **Development**
+
+```bash
+npm run start:dev
 ```
 
 ### Optional: Step 4: test
